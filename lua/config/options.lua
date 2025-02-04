@@ -3,7 +3,6 @@
 -- Add any additional options here
 -- Hint: use `:h <option>` to figure out the meaning if needed
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
-vim.opt.mouse = "a" -- allow the mouse to be used in Nvim
 
 -- Tab
 vim.opt.tabstop = 4 -- number of visual spaces per TAB
@@ -33,8 +32,8 @@ vim.o.shellquote = ""
 vim.o.shellxquote = ""
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
-  vim.o.guifont = "Sarasa Mono SC:h14"
   vim.cmd("cd C:\\Users\\zhaor\\Projects")
+  vim.o.guifont = "JetBrainsMono Nerd Font,Sarasa Mono SC:h14:h14"
   vim.g.neovide_theme = "kanagawa"
   vim.g.neovide_transparency = 0.8
   vim.g.neovide_normal_opacity = 0.8
